@@ -5,21 +5,21 @@
 class ProductboardCli < Formula
   desc "Read-only CLI tool for ProductBoard API"
   homepage "https://github.com/tabesto/productboard-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.2.0/productboard-cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "35c8b7ae4b0c6bfb38f8b4b1ee437251a260edd2a5244dd5ce323107ad67682a"
+      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.3.0/productboard-cli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1366ded04c089af8dfa0e7f09abc690b3c7999d8ed3029df69914a7de1389567"
 
       define_method(:install) do
         bin.install "pboard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.2.0/productboard-cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6ef719d791a7cf793a9f57026b7993a1cecd62044fb7d854c8de9a09e426a3a8"
+      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.3.0/productboard-cli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "2b279e3f6694e61ecaaffd03b50d36c8f5157f46e5f5b5a5c595534fe18a244f"
 
       define_method(:install) do
         bin.install "pboard"
@@ -29,15 +29,15 @@ class ProductboardCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.2.0/productboard-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "a33c3356174a6ecc511f619aed249c64dc7fc8eb168de6cd787f371663cc4355"
+      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.3.0/productboard-cli_0.3.0_linux_amd64.tar.gz"
+      sha256 "a576e36e0b89b590a6f95c155d48aba5c79fcce094034ed94c59831794cd89c6"
       define_method(:install) do
         bin.install "pboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.2.0/productboard-cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "77acc558711cae03c75eaedde655d9b5c47e777b0a3e4558d57c8695824c4e86"
+      url "https://github.com/Tabesto/productboard-cli/releases/download/v0.3.0/productboard-cli_0.3.0_linux_arm64.tar.gz"
+      sha256 "c3122d3cc741d53f03aff16fe3fa33f6793453c0baccd730fbfb5bd36e82d6ac"
       define_method(:install) do
         bin.install "pboard"
       end
