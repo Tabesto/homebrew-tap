@@ -4,9 +4,9 @@
 class KioskSiteProbe < Formula
   desc "Kiosk Site Probe (KSP) — site performance probe (public build)"
   homepage "https://github.com/Tabesto/homebrew-tap"
-  version "0.1.7"
-  url "https://github.com/Tabesto/homebrew-tap/releases/download/v0.1.7/kiosk-site-probe-v0.1.7-macos-universal.tar.gz"
-  sha256 "7602632449c7aceab51bfb894c8f117c21d97f47f00e95ee519c7ad258d6d50f"
+  version "0.1.8"
+  url "https://github.com/Tabesto/homebrew-tap/releases/download/v0.1.8/kiosk-site-probe-v0.1.8-macos-universal.tar.gz"
+  sha256 "14e90ea82caa6b4485c899dbc26f93dc4b74d7a4cbe90ff059def3fd2a4fa5b3"
 
   def install
     bin.install "kiosk-site-probe"
